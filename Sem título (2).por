@@ -1,23 +1,25 @@
-programa
-{
-    funcao inicio()
-    {
-        cadeia entrada
-        real numero
-        real soma = 0
+programa {
+    funcao inicio() {
+        inteiro numero1, numero2, numero3, numero4, numero5, soma
 
-        para (inteiro i = 1; i <= 5; i++)
-        {
-            escreva("Digite o ", i, "º número: ")
-            leia(entrada)
+        escreva("Digite o 1º número: ")
+        leia(numero1)
 
-            // troca vírgula por ponto
-            entrada = substitui(entrada, ",", ".")
-            numero = converte_real(entrada)
+        escreva("Digite o 2º número: ")
+        leia(numero2)
 
-            soma = soma + numero
-        }
+        escreva("Digite o 3º número: ")
+        leia(numero3)
 
-        escreva("A soma dos números é: ", soma)
+        escreva("Digite o 4º número: ")
+        leia(numero4)
+
+        escreva("Digite o 5º número: ")
+        leia(numero5)
+
+        // Calcula a soma
+        soma = numero1 + numero2 + numero3 + numero4 + numero5
+
+        escreva("A soma dos 5 números é: ", soma)
     }
 }
